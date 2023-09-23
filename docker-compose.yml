@@ -1,0 +1,26 @@
+version: "3"
+services:
+  api:
+    image: monemmono/gse4gamix-exercice:2
+    build: .
+    environment:
+      - NODE_ENV=production
+      - DB_URL=mongodb://mongo
+    ports:
+      - "9090:9090"
+    networks:
+      - app7
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo:5
+    ports:
+      - "9091:27017"
+    volumes:
+      - database:/data/db
+    networks:
+      - app7
+volumes:
+  database:
+networks:
+  app7:

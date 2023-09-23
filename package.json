@@ -1,0 +1,36 @@
+{
+  "name": "s2-gse-app",
+  "version": "1.0.0",
+  "description": "This is the 2nd APP workshop for the SGE module.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "Node.js",
+    "SGE",
+    "GamiX"
+  ],
+  "author": "Abdel Monem AISSA",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "connect-flash": "^0.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "express-session": "^1.17.3",
+    "express-validator": "^6.14.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.2.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.4",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "session": "^0.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
